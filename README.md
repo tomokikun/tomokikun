@@ -1,5 +1,3 @@
-### Hi there 👋
-
 <!--
 **tomokikun/tomokikun** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -14,5 +12,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-
-![eight](src/eight.svg)
+<p align="center">
+  <img src="src/eight.svg" width="250px" >
+</p>
