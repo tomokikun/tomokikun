@@ -24,10 +24,9 @@
       <animate
         xlink:href="#turbulence_filter"
         attributeName="baseFrequency"
-        values="0.2; 1; 0.2"
+        values="0.05; 1; 0.05"
         fill="freeze"
-        begin="click"
-        dur="1200s"
+        dur="120000s"
         repeatCount="indefinite"
       />
     </filter>
