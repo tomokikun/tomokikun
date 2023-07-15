@@ -1,8 +1,15 @@
-<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"
+<svg viewBox="0 0 450 450" xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink">
   <g filter="url(#s44)">
+    <defs>
+      <linearGradient id="linear_gradient">
+        <stop offset="0%" stop-color="orange" />
+        <stop offset="100%" stop-color="teal" />
+      </linearGradient>
+    </defs>
     <filter id="s44">
       <feTurbulence
+        id="turbulence_filter"
         type="fractalNoise"
         baseFrequency="0.05"
         numOctaves="0.5"
@@ -14,32 +21,32 @@
         xChannelSelector="R"
         yChannelSelector="G" />
       <feGaussianBlur stdDeviation="0 0.1" />
+      <animate
+        xlink:href="#turbulence_filter"
+        attributeName="baseFrequency"
+        values="0.2; 1; 0.2"
+        fill="freeze"
+        begin="click"
+        dur="1200s"
+        repeatCount="indefinite"
+      />
     </filter>
     <g>
-      <defs>
-        <linearGradient id="linear_gradient">
-          <stop offset="0%" stop-color="orange" />
-          <stop offset="100%" stop-color="teal" />
-        </linearGradient>
-      </defs>
-      <circle fill="url(#linear_gradient)" cx="167.36861663985985" cy="182.29243509220652"
-        r="35.982895336068985"></circle>
-      <circle fill="url(#linear_gradient)" cx="167.36861663985985" cy="297.43770016762727"
-        r="35.982895336068985"></circle>
+      <circle fill="url(#linear_gradient)" cx="123" cy="143" r="33" />
+      <circle fill="url(#linear_gradient)" cx="123" cy="249" r="33" />
       <path id="motion_path_0"
-        d="M 167.36861663985985,239.8650676299169
-      a 57.572632537710376,57.572632537710376 90 0 0 0,-115.14526507542075
-      a 57.572632537710376,57.572632537710376 90 0 0 0,115.14526507542075
-      a 57.572632537710376,57.572632537710376 90 0 1 0,115.14526507542075
-      a 57.572632537710376,57.572632537710376 90 0 1 0,-115.14526507542075"
+        d="M 123,196
+      a 53,53 90 0 0 0,-106
+      a 53,53 90 0 0 0,106
+      a 53,53 90 0 1 0,106
+      a 53,53 90 0 1 0,-106"
         stroke-linecap="round"
         fill="transparent" />
-      <use stroke="url(#linear_gradient)" stroke-width="35.982895336068985"
-        stroke-dasharray="115.14526507542075 608.3337726377616"
+      <use stroke="url(#linear_gradient)" stroke-width="33" stroke-dasharray="106 560.0176425610362"
         xlink:href="#motion_path_0">
         <animate attributeName="stroke-dashoffset"
           from="100" to="-528"
-          begin="0s" dur="1867.8962744576947s"
+          begin="0s" dur="249s"
           stroke="url(#linear_gradient)"
           repeatCount="indefinite" />
       </use>
@@ -47,37 +54,28 @@
         attributeName="transform"
         type="rotate"
         begin="0s"
-        dur="1284.6566708154203s"
+        dur="1850s"
         fill="freeze"
-        from="0,167.36861663985985,239.8650676299169"
-        to="360,167.36861663985985,239.8650676299169"
+        from="0,123,196"
+        to="360,123,196"
         repeatCount="indefinite" />
     </g>
     <g>
-      <defs>
-        <linearGradient id="linear_gradient">
-          <stop offset="0%" stop-color="orange" />
-          <stop offset="100%" stop-color="teal" />
-        </linearGradient>
-      </defs>
-      <circle fill="url(#linear_gradient)" cx="229.1701069774313" cy="162.23128142109942"
-        r="2.117940203323952"></circle>
-      <circle fill="url(#linear_gradient)" cx="229.1701069774313" cy="169.00869007173605"
-        r="2.117940203323952"></circle>
+      <circle fill="url(#linear_gradient)" cx="193" cy="68" r="36" />
+      <circle fill="url(#linear_gradient)" cx="193" cy="184" r="36" />
       <path id="motion_path_1"
-        d="M 229.1701069774313,165.61998574641774
-      a 3.388704325318323,3.388704325318323 90 0 0 0,-6.777408650636646
-      a 3.388704325318323,3.388704325318323 90 0 0 0,6.777408650636646
-      a 3.388704325318323,3.388704325318323 90 0 1 0,6.777408650636646
-      a 3.388704325318323,3.388704325318323 90 0 1 0,-6.777408650636646"
+        d="M 193,126
+      a 58,58 90 0 0 0,-116
+      a 58,58 90 0 0 0,116
+      a 58,58 90 0 1 0,116
+      a 58,58 90 0 1 0,-116"
         stroke-linecap="round"
         fill="transparent" />
-      <use stroke="url(#linear_gradient)" stroke-width="2.117940203323952"
-        stroke-dasharray="6.777408650636646 35.806305803795354"
+      <use stroke="url(#linear_gradient)" stroke-width="36" stroke-dasharray="116 612.849495632832"
         xlink:href="#motion_path_1">
         <animate attributeName="stroke-dashoffset"
           from="100" to="-528"
-          begin="0s" dur="863.2195630952531s"
+          begin="0s" dur="1763s"
           stroke="url(#linear_gradient)"
           repeatCount="indefinite" />
       </use>
@@ -85,37 +83,28 @@
         attributeName="transform"
         type="rotate"
         begin="0s"
-        dur="999.8137061567469s"
+        dur="1876s"
         fill="freeze"
-        from="0,229.1701069774313,165.61998574641774"
-        to="360,229.1701069774313,165.61998574641774"
+        from="0,193,126"
+        to="360,193,126"
         repeatCount="indefinite" />
     </g>
     <g>
-      <defs>
-        <linearGradient id="linear_gradient">
-          <stop offset="0%" stop-color="orange" />
-          <stop offset="100%" stop-color="teal" />
-        </linearGradient>
-      </defs>
-      <circle fill="url(#linear_gradient)" cx="131.92668820491284" cy="109.54766961204581"
-        r="49.6691665025156"></circle>
-      <circle fill="url(#linear_gradient)" cx="131.92668820491284" cy="268.48900242009574"
-        r="49.6691665025156"></circle>
+      <circle fill="url(#linear_gradient)" cx="130" cy="199" r="13" />
+      <circle fill="url(#linear_gradient)" cx="130" cy="241" r="13" />
       <path id="motion_path_2"
-        d="M 131.92668820491284,189.01833601607078
-      a 79.47066640402497,79.47066640402497 90 0 0 0,-158.94133280804994
-      a 79.47066640402497,79.47066640402497 90 0 0 0,158.94133280804994
-      a 79.47066640402497,79.47066640402497 90 0 1 0,158.94133280804994
-      a 79.47066640402497,79.47066640402497 90 0 1 0,-158.94133280804994"
+        d="M 130,220
+      a 21,21 90 0 0 0,-42
+      a 21,21 90 0 0 0,42
+      a 21,21 90 0 1 0,42
+      a 21,21 90 0 1 0,-42"
         stroke-linecap="round"
         fill="transparent" />
-      <use stroke="url(#linear_gradient)" stroke-width="49.6691665025156"
-        stroke-dasharray="158.94133280804994 839.7165141950302"
+      <use stroke="url(#linear_gradient)" stroke-width="13" stroke-dasharray="42 221.89378290154264"
         xlink:href="#motion_path_2">
         <animate attributeName="stroke-dashoffset"
           from="100" to="-528"
-          begin="0s" dur="361.24659301846543s"
+          begin="0s" dur="972s"
           stroke="url(#linear_gradient)"
           repeatCount="indefinite" />
       </use>
@@ -123,37 +112,28 @@
         attributeName="transform"
         type="rotate"
         begin="0s"
-        dur="1827.7677850024281s"
+        dur="1105s"
         fill="freeze"
-        from="0,131.92668820491284,189.01833601607078"
-        to="360,131.92668820491284,189.01833601607078"
+        from="0,130,220"
+        to="360,130,220"
         repeatCount="indefinite" />
     </g>
     <g>
-      <defs>
-        <linearGradient id="linear_gradient">
-          <stop offset="0%" stop-color="orange" />
-          <stop offset="100%" stop-color="teal" />
-        </linearGradient>
-      </defs>
-      <circle fill="url(#linear_gradient)" cx="272.19747793257307" cy="191.95991252805572"
-        r="22.533585694139354"></circle>
-      <circle fill="url(#linear_gradient)" cx="272.19747793257307" cy="264.06738674930165"
-        r="22.533585694139354"></circle>
+      <circle fill="url(#linear_gradient)" cx="237" cy="148" r="37" />
+      <circle fill="url(#linear_gradient)" cx="237" cy="266" r="37" />
       <path id="motion_path_3"
-        d="M 272.19747793257307,228.0136496386787
-      a 36.05373711062297,36.05373711062297 90 0 0 0,-72.10747422124594
-      a 36.05373711062297,36.05373711062297 90 0 0 0,72.10747422124594
-      a 36.05373711062297,36.05373711062297 90 0 1 0,72.10747422124594
-      a 36.05373711062297,36.05373711062297 90 0 1 0,-72.10747422124594"
+        d="M 237,207
+      a 59,59 90 0 0 0,-118
+      a 59,59 90 0 0 0,118
+      a 59,59 90 0 1 0,118
+      a 59,59 90 0 1 0,-118"
         stroke-linecap="round"
         fill="transparent" />
-      <use stroke="url(#linear_gradient)" stroke-width="22.533585694139354"
-        stroke-dasharray="72.10747422124594 380.9571483435173"
+      <use stroke="url(#linear_gradient)" stroke-width="37" stroke-dasharray="118 623.4158662471912"
         xlink:href="#motion_path_3">
         <animate attributeName="stroke-dashoffset"
           from="100" to="-528"
-          begin="0s" dur="1961.9465880755226s"
+          begin="0s" dur="1594s"
           stroke="url(#linear_gradient)"
           repeatCount="indefinite" />
       </use>
@@ -161,37 +141,28 @@
         attributeName="transform"
         type="rotate"
         begin="0s"
-        dur="1206.923498902423s"
+        dur="1740s"
         fill="freeze"
-        from="0,272.19747793257307,228.0136496386787"
-        to="360,272.19747793257307,228.0136496386787"
+        from="0,237,207"
+        to="360,237,207"
         repeatCount="indefinite" />
     </g>
     <g>
-      <defs>
-        <linearGradient id="linear_gradient">
-          <stop offset="0%" stop-color="orange" />
-          <stop offset="100%" stop-color="teal" />
-        </linearGradient>
-      </defs>
-      <circle fill="url(#linear_gradient)" cx="149.5366198545325" cy="146.4484700113759"
-        r="14.778476916778104"></circle>
-      <circle fill="url(#linear_gradient)" cx="149.5366198545325" cy="193.73959614506583"
-        r="14.778476916778104"></circle>
+      <circle fill="url(#linear_gradient)" cx="258" cy="150" r="12" />
+      <circle fill="url(#linear_gradient)" cx="258" cy="188" r="12" />
       <path id="motion_path_4"
-        d="M 149.5366198545325,170.09403307822086
-      a 23.645563066844968,23.645563066844968 90 0 0 0,-47.291126133689936
-      a 23.645563066844968,23.645563066844968 90 0 0 0,47.291126133689936
-      a 23.645563066844968,23.645563066844968 90 0 1 0,47.291126133689936
-      a 23.645563066844968,23.645563066844968 90 0 1 0,-47.291126133689936"
+        d="M 258,169
+      a 19,19 90 0 0 0,-38
+      a 19,19 90 0 0 0,38
+      a 19,19 90 0 1 0,38
+      a 19,19 90 0 1 0,-38"
         stroke-linecap="round"
         fill="transparent" />
-      <use stroke="url(#linear_gradient)" stroke-width="14.778476916778104"
-        stroke-dasharray="47.291126133689936 249.84778274948724"
+      <use stroke="url(#linear_gradient)" stroke-width="12" stroke-dasharray="38 200.76104167282426"
         xlink:href="#motion_path_4">
         <animate attributeName="stroke-dashoffset"
           from="100" to="-528"
-          begin="0s" dur="898.4613090293963s"
+          begin="0s" dur="1649s"
           stroke="url(#linear_gradient)"
           repeatCount="indefinite" />
       </use>
@@ -199,37 +170,28 @@
         attributeName="transform"
         type="rotate"
         begin="0s"
-        dur="1162.7187829821455s"
+        dur="1123s"
         fill="freeze"
-        from="0,149.5366198545325,170.09403307822086"
-        to="360,149.5366198545325,170.09403307822086"
+        from="0,258,169"
+        to="360,258,169"
         repeatCount="indefinite" />
     </g>
     <g>
-      <defs>
-        <linearGradient id="linear_gradient">
-          <stop offset="0%" stop-color="orange" />
-          <stop offset="100%" stop-color="teal" />
-        </linearGradient>
-      </defs>
-      <circle fill="url(#linear_gradient)" cx="196.68042149595212" cy="228.83684902927322"
-        r="7.815945128858657"></circle>
-      <circle fill="url(#linear_gradient)" cx="196.68042149595212" cy="253.84787344162092"
-        r="7.815945128858657"></circle>
+      <circle fill="url(#linear_gradient)" cx="271" cy="167" r="9" />
+      <circle fill="url(#linear_gradient)" cx="271" cy="195" r="9" />
       <path id="motion_path_5"
-        d="M 196.68042149595212,241.34236123544707
-      a 12.505512206173853,12.505512206173853 90 0 0 0,-25.011024412347705
-      a 12.505512206173853,12.505512206173853 90 0 0 0,25.011024412347705
-      a 12.505512206173853,12.505512206173853 90 0 1 0,25.011024412347705
-      a 12.505512206173853,12.505512206173853 90 0 1 0,-25.011024412347705"
+        d="M 271,181
+      a 14,14 90 0 0 0,-28
+      a 14,14 90 0 0 0,28
+      a 14,14 90 0 1 0,28
+      a 14,14 90 0 1 0,-28"
         stroke-linecap="round"
         fill="transparent" />
-      <use stroke="url(#linear_gradient)" stroke-width="7.815945128858657"
-        stroke-dasharray="25.011024412347705 132.13787669282536"
+      <use stroke="url(#linear_gradient)" stroke-width="9" stroke-dasharray="28 147.92918860102841"
         xlink:href="#motion_path_5">
         <animate attributeName="stroke-dashoffset"
           from="100" to="-528"
-          begin="0s" dur="1329.897734291452s"
+          begin="0s" dur="1830s"
           stroke="url(#linear_gradient)"
           repeatCount="indefinite" />
       </use>
@@ -237,37 +199,28 @@
         attributeName="transform"
         type="rotate"
         begin="0s"
-        dur="316.72269745544224s"
+        dur="1831s"
         fill="freeze"
-        from="0,196.68042149595212,241.34236123544707"
-        to="360,196.68042149595212,241.34236123544707"
+        from="0,271,181"
+        to="360,271,181"
         repeatCount="indefinite" />
     </g>
     <g>
-      <defs>
-        <linearGradient id="linear_gradient">
-          <stop offset="0%" stop-color="orange" />
-          <stop offset="100%" stop-color="teal" />
-        </linearGradient>
-      </defs>
-      <circle fill="url(#linear_gradient)" cx="194.68543993942214" cy="79.60523655112378"
-        r="44.44998944978652"></circle>
-      <circle fill="url(#linear_gradient)" cx="194.68543993942214" cy="221.84520279044068"
-        r="44.44998944978652"></circle>
+      <circle fill="url(#linear_gradient)" cx="178" cy="167" r="45" />
+      <circle fill="url(#linear_gradient)" cx="178" cy="311" r="45" />
       <path id="motion_path_6"
-        d="M 194.68543993942214,150.72521967078222
-      a 71.11998311965844,71.11998311965844 90 0 0 0,-142.23996623931689
-      a 71.11998311965844,71.11998311965844 90 0 0 0,142.23996623931689
-      a 71.11998311965844,71.11998311965844 90 0 1 0,142.23996623931689
-      a 71.11998311965844,71.11998311965844 90 0 1 0,-142.23996623931689"
+        d="M 178,239
+      a 72,72 90 0 0 0,-144
+      a 72,72 90 0 0 0,144
+      a 72,72 90 0 1 0,144
+      a 72,72 90 0 1 0,-144"
         stroke-linecap="round"
         fill="transparent" />
-      <use stroke="url(#linear_gradient)" stroke-width="44.44998944978652"
-        stroke-dasharray="142.23996623931689 751.4800997292793"
+      <use stroke="url(#linear_gradient)" stroke-width="45" stroke-dasharray="144 760.7786842338604"
         xlink:href="#motion_path_6">
         <animate attributeName="stroke-dashoffset"
           from="100" to="-528"
-          begin="0s" dur="1415.5933651451924s"
+          begin="0s" dur="1912s"
           stroke="url(#linear_gradient)"
           repeatCount="indefinite" />
       </use>
@@ -275,37 +228,28 @@
         attributeName="transform"
         type="rotate"
         begin="0s"
-        dur="369.09746453049826s"
+        dur="1656s"
         fill="freeze"
-        from="0,194.68543993942214,150.72521967078222"
-        to="360,194.68543993942214,150.72521967078222"
+        from="0,178,239"
+        to="360,178,239"
         repeatCount="indefinite" />
     </g>
     <g>
-      <defs>
-        <linearGradient id="linear_gradient">
-          <stop offset="0%" stop-color="orange" />
-          <stop offset="100%" stop-color="teal" />
-        </linearGradient>
-      </defs>
-      <circle fill="url(#linear_gradient)" cx="229.40361841951386" cy="216.49206237652714"
-        r="29.595516146935672"></circle>
-      <circle fill="url(#linear_gradient)" cx="229.40361841951386" cy="311.1977140467213"
-        r="29.595516146935672"></circle>
+      <circle fill="url(#linear_gradient)" cx="235" cy="164" r="50" />
+      <circle fill="url(#linear_gradient)" cx="235" cy="324" r="50" />
       <path id="motion_path_7"
-        d="M 229.40361841951386,263.8448882116242
-      a 47.35282583509708,47.35282583509708 90 0 0 0,-94.70565167019416
-      a 47.35282583509708,47.35282583509708 90 0 0 0,94.70565167019416
-      a 47.35282583509708,47.35282583509708 90 0 1 0,94.70565167019416
-      a 47.35282583509708,47.35282583509708 90 0 1 0,-94.70565167019416"
+        d="M 235,244
+      a 80,80 90 0 0 0,-160
+      a 80,80 90 0 0 0,160
+      a 80,80 90 0 1 0,160
+      a 80,80 90 0 1 0,-160"
         stroke-linecap="round"
         fill="transparent" />
-      <use stroke="url(#linear_gradient)" stroke-width="29.595516146935672"
-        stroke-dasharray="94.70565167019416 500.3475074108377"
+      <use stroke="url(#linear_gradient)" stroke-width="50" stroke-dasharray="160 845.3096491487338"
         xlink:href="#motion_path_7">
         <animate attributeName="stroke-dashoffset"
           from="100" to="-528"
-          begin="0s" dur="444.5076024952711s"
+          begin="0s" dur="379s"
           stroke="url(#linear_gradient)"
           repeatCount="indefinite" />
       </use>
@@ -313,37 +257,28 @@
         attributeName="transform"
         type="rotate"
         begin="0s"
-        dur="1877.9273512072805s"
+        dur="505s"
         fill="freeze"
-        from="0,229.40361841951386,263.8448882116242"
-        to="360,229.40361841951386,263.8448882116242"
+        from="0,235,244"
+        to="360,235,244"
         repeatCount="indefinite" />
     </g>
     <g>
-      <defs>
-        <linearGradient id="linear_gradient">
-          <stop offset="0%" stop-color="orange" />
-          <stop offset="100%" stop-color="teal" />
-        </linearGradient>
-      </defs>
-      <circle fill="url(#linear_gradient)" cx="215.7898332730792" cy="127.52447765626229"
-        r="26.56908789858684"></circle>
-      <circle fill="url(#linear_gradient)" cx="215.7898332730792" cy="212.5455589317402"
-        r="26.56908789858684"></circle>
+      <circle fill="url(#linear_gradient)" cx="255" cy="223" r="18" />
+      <circle fill="url(#linear_gradient)" cx="255" cy="281" r="18" />
       <path id="motion_path_8"
-        d="M 215.7898332730792,170.03501829400125
-      a 42.51054063773895,42.51054063773895 90 0 0 0,-85.0210812754779
-      a 42.51054063773895,42.51054063773895 90 0 0 0,85.0210812754779
-      a 42.51054063773895,42.51054063773895 90 0 1 0,85.0210812754779
-      a 42.51054063773895,42.51054063773895 90 0 1 0,-85.0210812754779"
+        d="M 255,252
+      a 29,29 90 0 0 0,-58
+      a 29,29 90 0 0 0,58
+      a 29,29 90 0 1 0,58
+      a 29,29 90 0 1 0,-58"
         stroke-linecap="round"
         fill="transparent" />
-      <use stroke="url(#linear_gradient)" stroke-width="26.56908789858684"
-        stroke-dasharray="85.0210812754779 449.1821273951262"
+      <use stroke="url(#linear_gradient)" stroke-width="18" stroke-dasharray="58 306.424747816416"
         xlink:href="#motion_path_8">
         <animate attributeName="stroke-dashoffset"
           from="100" to="-528"
-          begin="0s" dur="1074.3741731476266s"
+          begin="0s" dur="1320s"
           stroke="url(#linear_gradient)"
           repeatCount="indefinite" />
       </use>
@@ -351,37 +286,28 @@
         attributeName="transform"
         type="rotate"
         begin="0s"
-        dur="1873.2998714227224s"
+        dur="723s"
         fill="freeze"
-        from="0,215.7898332730792,170.03501829400125"
-        to="360,215.7898332730792,170.03501829400125"
+        from="0,255,252"
+        to="360,255,252"
         repeatCount="indefinite" />
     </g>
     <g>
-      <defs>
-        <linearGradient id="linear_gradient">
-          <stop offset="0%" stop-color="orange" />
-          <stop offset="100%" stop-color="teal" />
-        </linearGradient>
-      </defs>
-      <circle fill="url(#linear_gradient)" cx="127.37608214833737" cy="160.84118779910216"
-        r="5.967794846555961"></circle>
-      <circle fill="url(#linear_gradient)" cx="127.37608214833737" cy="179.9381313080812"
-        r="5.967794846555961"></circle>
+      <circle fill="url(#linear_gradient)" cx="155" cy="135" r="7" />
+      <circle fill="url(#linear_gradient)" cx="155" cy="157" r="7" />
       <path id="motion_path_9"
-        d="M 127.37608214833737,170.38965955359168
-      a 9.548471754489539,9.548471754489539 90 0 0 0,-19.096943508979077
-      a 9.548471754489539,9.548471754489539 90 0 0 0,19.096943508979077
-      a 9.548471754489539,9.548471754489539 90 0 1 0,19.096943508979077
-      a 9.548471754489539,9.548471754489539 90 0 1 0,-19.096943508979077"
+        d="M 155,146
+      a 11,11 90 0 0 0,-22
+      a 11,11 90 0 0 0,22
+      a 11,11 90 0 1 0,22
+      a 11,11 90 0 1 0,-22"
         stroke-linecap="round"
         fill="transparent" />
-      <use stroke="url(#linear_gradient)" stroke-width="5.967794846555961"
-        stroke-dasharray="19.096943508979077 100.89269135867683"
+      <use stroke="url(#linear_gradient)" stroke-width="7" stroke-dasharray="22 116.23007675795088"
         xlink:href="#motion_path_9">
         <animate attributeName="stroke-dashoffset"
           from="100" to="-528"
-          begin="0s" dur="420.37127895637116s"
+          begin="0s" dur="671s"
           stroke="url(#linear_gradient)"
           repeatCount="indefinite" />
       </use>
@@ -389,10 +315,10 @@
         attributeName="transform"
         type="rotate"
         begin="0s"
-        dur="1455.9358612423482s"
+        dur="847s"
         fill="freeze"
-        from="0,127.37608214833737,170.38965955359168"
-        to="360,127.37608214833737,170.38965955359168"
+        from="0,155,146"
+        to="360,155,146"
         repeatCount="indefinite" />
     </g>
   </g>
