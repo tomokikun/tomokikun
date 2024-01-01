@@ -13,5 +13,5 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 <p align="center">
-  <img src="src/eight.svg" width="250px" >
+  <img src="src/sunset.svg" width="250px" >
 </p>
